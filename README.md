@@ -8,7 +8,7 @@
 * **内容**：中科大 Centos7 软件源repo文件。
 * **来源**：http://mirrors.ustc.edu.cn/help/centos.html 正文文本的简单复制粘贴
 * **制作原因**：方便直接使用shell脚本获取，可以通过以下shell脚本实现自动化部署：
-```
+```bash
 #!/usr/bin/env bash
 
 cd /etc/yum.repos.d/
