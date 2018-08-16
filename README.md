@@ -5,7 +5,7 @@
 * **制作原因**：网上现有省市区县文件太旧，抑或是要收费。
 
 ## `CentOS-Base-USTC.repo`
-* **内容**：中科大 Centos7 软件源repo文件。
+* **内容**：中科大 Centos7 软件源 repo 文件。
 * **来源**：http://mirrors.ustc.edu.cn/help/centos.html 正文文本的简单复制粘贴
 * **制作原因**：方便直接使用shell脚本获取，可以通过以下shell脚本实现自动化部署：
 ```bash
@@ -16,3 +16,17 @@ wget https://raw.githubusercontent.com/shelmingsong/Share/master/CentOS-Base-UST
 yum clean all
 yum makecache
 ```
+
+## `sources.list_ubuntu_18.04`
+* **内容**：阿里云 Ubuntu 18.04 软件源 repo 文件。
+* **来源**：https://opsx.alibaba.com/mirror 中 ubuntu 右侧帮助按钮点开后的正文文本的简单复制粘贴
+* **制作原因**：方便直接使用shell脚本获取，可以通过以下shell脚本实现自动化部署：
+```bash
+#!/usr/bin/env bash
+
+cd /etc/yum.repos.d/
+wget https://raw.githubusercontent.com/shelmingsong/Share/master/CentOS-Base-USTC.repo
+yum clean all
+yum makecache
+```
+
