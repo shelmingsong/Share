@@ -24,9 +24,10 @@ yum makecache
 ```bash
 #!/usr/bin/env bash
 
-cd /etc/yum.repos.d/
-wget https://raw.githubusercontent.com/shelmingsong/Share/master/CentOS-Base-USTC.repo
-yum clean all
-yum makecache
+cd /etc/apt/
+mv sources.list sources.list.back
+wget https://raw.githubusercontent.com/shelmingsong/Share/master/sources.list_ubuntu_18.04
+mv sources.list_ubuntu_18.04 sources.list
+apt-get clean
+apt-get update
 ```
-
